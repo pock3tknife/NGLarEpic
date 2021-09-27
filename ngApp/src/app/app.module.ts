@@ -15,10 +15,23 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
 import { ResponseResetComponent } from './components/password/response-reset/response-reset.component';
 
+import { JarwisService } from './services/jarwis.service';
+
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, EmployeesComponent, EmployeeEditComponent, LoginComponent, SignupComponent, ProfileComponent, RequestResetComponent, ResponseResetComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    EmployeesComponent,
+    EmployeeEditComponent,
+    LoginComponent,
+    SignupComponent,
+    ProfileComponent,
+    RequestResetComponent,
+    ResponseResetComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
-  providers: [],
+  providers: [JarwisService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
